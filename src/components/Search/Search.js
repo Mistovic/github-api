@@ -68,7 +68,6 @@ const Search = () => {
 				dispach(searchContext(''));
 			})
 			.catch(err => {
-				// -- Fetch not working well with response statuses so we need to handle response like this
 				err.json().then(errorMessage => {
 					console.log(errorMessage);
 					// -- End loading

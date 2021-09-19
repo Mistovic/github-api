@@ -132,11 +132,11 @@ const RepoList = (props) => {
 				</div>
 
 				<div className="repo-heading">
-					<h1>Loading...</h1>
+					<h1>All repos</h1>
 				</div>
 
 				<div className={"repo-list no-items"}>
-					{/* <p>This user does not have any repos.</p> */}
+					<p>Loading...</p>
 				</div>
 			</div>
 		)
