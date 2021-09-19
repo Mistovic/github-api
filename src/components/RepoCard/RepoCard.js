@@ -28,7 +28,6 @@ const RepoCard = (props) => {
 				<div className="repo-card__title">
 					<h3>
 						<a href={html_url} rel="noreferrer" target="_blank">
-							Repo name
 							{name}
 						</a>
 					</h3>
