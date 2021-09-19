@@ -1,0 +1,15 @@
+@import '../../scss/var';
+
+.wrapper {
+	padding: 16px 0;
+}
+
+.repo-heading {
+	padding: 40px 0px 10px;
+}
+
+.no-items {
+	padding: 16px;
+	border: 1px solid $gray-main;
+	border-radius: 6px;
+}

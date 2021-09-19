@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+// import { useSelector, useDispatch } from 'react-redux';
+
+// -- React router
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+
+// -- Import custom actions
+// import { getUsers } from './actions/';
+
+// -- Custom views
+import UserList from './views/UserList/UserList';
+import RepoList from './views/RepoList/RepoList';
+
+// -- Custom components
+import Header from './components/Header/Header'
+
+// -- CustomStyles
+import './Main.scss';
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
 
+	return (
+
+		<div className="App">
+			<BrowserRouter>
+				<Header />
+				<Switch>
+					<Route path="/" exact  >
+						<UserList />
+					</Route>
+
+					<Route path="/repo/:id" component={RepoList} />
+				</Switch>
+			</BrowserRouter>
+		</div>
+	);
+
+}
 export default App;

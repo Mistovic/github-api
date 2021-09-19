@@ -1,0 +1,51 @@
+@import "../../scss/var";
+
+.repo-card {
+    max-width: 100%;
+    padding: 16px;
+    border: 1px solid $gray-main;
+    margin-top: -1px;
+    &:first-child {
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+    }
+
+    &:last-child {
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+    .repo-card__icon {
+        svg {
+            fill: #fff;
+        }
+    }
+}
+
+.repo-card__desc {
+    margin-bottom: 20px;
+    p {
+        font-size: 14px;
+    }
+    p {
+        display: block; /* Fallback for non-webkit */
+        display: -webkit-box;
+		max-width: 300px;
+        max-height: 3.6em; /* Fallback for non-webkit, line-height * 2 */
+        line-height: 1.3em;
+        -webkit-line-clamp: 3; /* if you change this, make sure to change the fallback line-height and height */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+.repo-cart__info,
+.repo-card__info-inner {
+    display: flex;
+}
+.repo-card__info-inner {
+    margin-right: 25px;
+}
+.repo-card__icon {
+    margin-right: 10px;
+}

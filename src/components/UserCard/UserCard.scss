@@ -1,0 +1,31 @@
+@import '../../scss/var';
+
+.user-card {
+	display: flex;
+	align-items: center;
+	padding: 20px;
+
+	&:not(:first-child) {
+		border-top: 1px solid $gray-main;
+	}
+}
+
+.user-card__avatar {
+	width: 50px;
+	height: 50px;
+	margin-right: 20px;
+	border-radius: 100%;
+	overflow: hidden;
+	img {
+		max-width: 100%;
+	}
+}
+
+.user-cart__bio {
+	color: $light-main;
+
+	h2 {
+		margin: 0 0 5px;
+	}
+
+}

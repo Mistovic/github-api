@@ -1,0 +1,10 @@
+@import '../../scss/var';
+
+.header {
+	padding: 10px 10px;
+	background-color:$dark-main ;
+
+	svg {
+		fill: $light-main;
+	}
+}

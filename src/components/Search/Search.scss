@@ -1,0 +1,42 @@
+@import '../../scss/var';
+
+.form-wrapper {
+	padding: 40px 0;
+	text-align: center;
+	color: $light-main;
+}
+
+.search-form__heading {
+	margin-bottom: 20px;
+}
+
+.search-form__control {
+	input {
+		min-height: 30px;
+		padding: 4px;
+		background-color: $dark-main;
+		appearance: none;
+		border: 1px solid $gray-main;
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+		color: $light-main;
+		caret-color:$blue-secondary ;
+		&:focus {
+			outline: none;
+		}
+	}
+
+	button {
+		min-height: 30px;
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+		border: none;
+		cursor: pointer;
+		background-color: $blue-secondary;
+		font-weight: bold;
+		color: $light-main;
+		&:focus {
+			outline: none;
+		}
+	}
+}

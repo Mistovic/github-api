@@ -1,0 +1,76 @@
+
+// -- Import global setup
+@import './scss/var';
+@import './scss/mixins';
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+
+}
+
+body {
+	padding: 0;
+	background-color: $dark-secondary;
+	color: $light-main;
+	font-family:  Arial, Helvetica, sans-serif;
+}
+h1 {
+	margin-bottom: 10px;
+}
+h1 + p {
+	color: $gray-secondry;
+}
+
+
+a, link {
+	color: $blue-main;
+	text-decoration: none;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 20px;
+	max-width: $cont-sm;
+}
+
+@media screen and (min-width: 570px) {
+	.container {
+		margin: 0 auto;
+		max-width: $cont-md;
+	}
+}
+
+
+@media screen and (min-width: 768px) {
+	.container {
+		margin: 0 auto;
+		max-width: $cont-lg;
+	}
+}
+
+@media screen and (min-width: 1250px) {
+	.container {
+		margin: 0 auto;
+		max-width: $cont-xl;
+	}
+}
+
+
+.text-center {
+	text-align: center;
+}
+
+.error {
+	// border-color: #dc3545;
+	// color: #dc3545;
+	background-color: #dc3545;
+}
+
+.btn-secondary {
+	display: inline-block;
+	background-color: $blue-main;
+	padding: 10px;
+	border-radius: 6px;
+	color: $light-main;
+}
