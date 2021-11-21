@@ -21,12 +21,12 @@ import './Main.scss';
 function App() {
 
 	return (
-
 		<div className="App">
 			<BrowserRouter>
 				<Header />
+				
 				<Switch>
-					<Route path="/" exact  >
+					<Route path="/"   >
 						<UserList />
 					</Route>
 
@@ -35,6 +35,5 @@ function App() {
 			</BrowserRouter>
 		</div>
 	);
-
 }
 export default App;

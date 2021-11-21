@@ -163,4 +163,4 @@ const RepoList = (props) => {
 
 }
 
-export default RepoList
+export default RepoList;
